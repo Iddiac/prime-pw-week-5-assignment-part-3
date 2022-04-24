@@ -22,17 +22,14 @@ addToCollection('tide','podgirl','2016');
 
 
 
-function showCollection(array){
+function showCollection(collection){
+    console.log(collection.length);
     for (let i=0; i<collection.length; i++){
-        
-        if(collection[i]=== array){
-            return array;
-        };
-        console.log(collection[i].title,'by',collection[i].artist,'Published in',collection[i].published);  // lists them all correctly
-    }
+       console.log(collection[i].title,'by',collection[i].artist,'Published in',collection[i].published);  // lists them all correctly};
+    } 
 }
+showCollection(collection);
 
-console.log(showCollection()); //output undefined??
 
 
 function findByArtist(artist){
